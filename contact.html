@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Thomas' Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <img src="LOGO.png" alt="T Logo" class="logo">
+      <h1>Thomas' Website</h1>
+    </header>
+    <nav>
+      <div class="menu-icon" id="menu-icon">
+        <i class="fa fa-bars"></i>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='education.html'>Education</a></li>
+        <li><a href='projects.html'>Projects</a></li>
+        <li><a class="active" href='contact.html'>Contact Me</a></li>
+      </ul>
+    </nav>
+    <!-- <div align='center'> -->
+    <!-- 9/19 -->
+    <div class="imgcontainer">
+      <div id="contacthero">
+        <div class="centered">
+          <h1>Contact Me</h1>
+          <!-- <p>I'm
+            <span class="auto-type"></span>
+          </p> -->
+        </div>
+      </div>
+    </div>
+      <!-- <img src="Professor Elva.png" alt="Elva at Japan" title="Elva at Japan with a group of elementary students" -->
+        <!-- width="800px" height="500px"> -->
+    <!-- </div> -->
+    <main>
+      <section class="oddrow" id="contact">
+        <h1>Contact Me: </h1>
+        <h3 align="center">All the * fields are required</h3>
+          <form method="POST" action="process_form.php">
+          <!-- First name  -->
+          <label for="fname">*First Name:</label>
+          <!-- <input type="text" name="fname" id="fname" value="Enter your first name"> -->
+          <input type="text" name="fname" id="fname" required>
+          <!-- Last name -->
+          <label for='lname'>*Last name:</label>
+          <input type="text" name="lname" id="lname" required>
+          <!-- Radio buttons -->
+          <label for='interest'>*Interested in:</label>
+          <div class="form-container">
+          <input type="radio" id="chef" name="interest" value="Chef" required>
+          <label for="chef">Chef</label>
+          <input type="radio" id="cis_student" name="interest" value="CIS Student" required>
+          <label for="cis_student">CIS Student</label>
+          </div>
+          <!-- Additional info -->
+          <label for="message">Additional Information: </label>
+          <textarea rows="5" cols="20" name="message">List any additional info here...</textarea>
+
+          <!-- buttons in the same row -->
+          <div class="button-container">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer align='center'>
+      <p><i><small>Copyright &copy; Thomas Davis<br>
+            <a href="mailto:tadavi24@asu.edu" style="color: white;">tadavi24@asu.edu</a>
+            <br>
+          </small></i></p>
+      <div class="socialMediaLinks">
+        <small><i><a href="https://twitter.com/thomasgatztv" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://facebook.com" class="fa fa-facebook-f" target="_blank"></a>
+            <a href="https://github.io" class="fa fa-brand fa-github" target="_blank"></a>
+            <a href="https://www.instagram.com/thomasdavisphoto/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/thomas-a-davis" class="fa fa-linkedin" target="_blank">
+            </a></i></small>
+      </div>
+
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
